@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/ebf30d11fb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Nunito+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+  <link rel="stylesheet" href="custom.css">
+  <title>customers inventory</title>
+</head>
+
+<body>
+  <!-- navbar component -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler ml-auto mb-2" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- sidebar -->
+          <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top ">
+            <a href="#" class="navbar-brand d-block text-white py-3 mr-auto border-bottom text-center  mb-4">
+              <h4>Outreach Specialist</h4>
+            </a>
+
+            <ul class="navbar-nav flex-column mt-4">
+
+
+              <li class=" icon-parent"><a href="customersinventory.html"
+                  class="nav-link text-white   p-2 mb-2 sidebar-link"><i
+                    class="fa fa-database mr-2"></i>Inventory/Publishers</a>
+              </li>
+              <li class=" icon-parent"><a href="recommendedsite.html"
+                  class="nav-link text-white  p-2 mb-2 sidebar-link"><i class="fa fa-users  mr-2"></i>Recommended
+                  Sites</a>
+              </li>
+              <li class=" icon-parent"><a href="tasks.html" class="nav-link text-white   p-2 mb-2 sidebar-link"><i
+                    class="fa fa-dashboard mr-2"></i>My Tasks</a>
+              </li>
+
+
+
+
+            </ul>
+          </div>
+
+
+          </ul>
+        </div>
+        <!-- end of side bar -->
+        <!-- main content area -->
+        <div class=" col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h4 class="text-light  text-uppercase mb-0"></h4>
+            </div>
+
+            <div class="col-md-4 ml-auto">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+
+
+                </li>
+                <li class="nav-item">
+
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light  ">
+                    <i class="fa fa-key"></i> Sign out
+                  </a>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of main content area -->
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!--addlink modal -->
+
+  <!-- end of addlink modal -->
+
+
+
+
+
+  <!-- table -->
+  <section id="first" class="mt-5">
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row">
+            <div class="col-md-8 m-auto">
+              <h3 class="text-center">Submit Article</h3>
+              <div class="filter mt-3">
+                <div class="card">
+                  <div class="card-body">
+                    <form action="">
+                      <div class="form-group">
+                        <label for="">Topic</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-stripped table-bordered">
+                          <thead>
+                            <tr>
+                              <th>S/no</th>
+                              <th>Promoted urls</th>
+                              <th>Anchors</th>
+                            </tr>
+                          </thead>
+                          <tr>
+                            <td>1</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+
+                          </tr>
+                        </table>
+                      </div>
+
+
+                      <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea name="editor1" id="" cols="30" rows="10" class="form-control"
+                          placeholder="content"></textarea>
+
+                      </div>
+                      <div class="form-group">
+                        <label for="">Upload a file</label>
+                        <input type="file">
+                      </div>
+                      <button type="submit" class="btn btn-success">SUBMIT</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- end of table filter -->
+
+
+        </div>
+  </section>
+
+
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
+
+</body>
+
+</html>
